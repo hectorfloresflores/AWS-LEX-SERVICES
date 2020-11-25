@@ -70,5 +70,5 @@ coverage_report
 *.out
 *.log
 
-#credentials
-credentials.js
+#Credentials
+credentials.json

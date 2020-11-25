@@ -34,8 +34,14 @@
 </div>
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
 <script src="../dist/aws-lex-audio.js" type="text/javascript"></script>
+<script src="../credentials.js" type="text/javascript"></script>
 <script src="renderer.js" type="text/javascript"></script>
 <script type="text/javascript">
+
+    document.getElementById("ACCESS_ID").value = credentials.ACCESS_ID
+    document.getElementById("SECRET_KEY").value = credentials.SECRET_KEY
+    document.getElementById("SESSION_TOKEN").value = credentials.SESSION_TOKEN
+    document.getElementById("BOT").value = credentials.BOT
     var waveform = window.Waveform();
     var message = document.getElementById('message');
     var config, conversation;
